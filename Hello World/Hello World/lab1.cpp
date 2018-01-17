@@ -35,7 +35,7 @@ long long fibonacci(const int n)
 	int y = 1;
 
 	// MAGIC NUMBER~~~~
-	for (int i = 2; i <= x; ++i)
+	for (int i = 2; i <= n; ++i)
 	{
 		z += y;
 	}
