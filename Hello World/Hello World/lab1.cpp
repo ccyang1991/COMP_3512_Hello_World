@@ -8,8 +8,21 @@
 // RETURN: the greatest common denominator of a and b.
 int gcd(const int a, const int b)
 {
-	// Replace this line with your code (have fun!).
-	return 0;
+	int x = 0;
+
+	// start from the highest number and work your way down
+	if (a > b)
+		x = a;
+	else
+		x = b;
+
+	while (1)
+	{
+		if (!(a % x) && !(b % x))
+			return x;
+		--x;
+	}
+	return 0; // somehow?
 }
 
 // Fibonacci
@@ -18,6 +31,13 @@ int gcd(const int a, const int b)
 // RETURN: the nth positive integer in the Fibonacci sequence.
 long long fibonacci(const int n)
 {
-	// Replace this line with your code (challenge: do this with recursion!).
-	return 0;
+	int z = 0;
+	int y = 1;
+
+	// MAGIC NUMBER~~~~
+	for (int i = 2; i <= x; ++i)
+	{
+		z += y;
+	}
+	return z;
 }

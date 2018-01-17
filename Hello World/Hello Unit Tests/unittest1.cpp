@@ -6,39 +6,6 @@ using namespace std;
 
 namespace HelloUnitTests
 {	
-	// Greatest common demoniator
-	int gcd(const int a, const int b)
-	{
-		int x = 0;
-
-		// start from the highest number and work your way down
-		if (a > b)
-			x = a;
-		else
-			x = b;
-
-		while (1)
-		{
-			if (!(a % x) && !(b % x))
-				return x;
-			--x;
-		}
-		return -1; // somehow?
-	}
-	
-	int fibonacci(const int x)
-	{
-		int z = 0;
-		int y = 1;
-
-		// MAGIC NUMBER~~~~
-		for(int i = 2; i <= x; ++i)
-		{
-			z += y;
-		}
-		return z;
-	}
-
 
 	TEST_CLASS(UnitTest1)
 	{
